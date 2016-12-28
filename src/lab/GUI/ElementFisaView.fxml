@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.GUI.ElementFisaController">
+   <center>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableViewPosturiFise" HBox.hgrow="ALWAYS">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TableView>
+            <TableView fx:id="tableViewSarciniFise" HBox.hgrow="ALWAYS">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TableView>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tableViewFisaPost">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </TableView>
+                  <ListView fx:id="listViewSarcini" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <AnchorPane minWidth="-Infinity" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="136.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="btnAddFisa" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="50.0" prefWidth="100.0" text="Adauga" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnDeleteFisa" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="50.0" prefWidth="100.0" text="Delete" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnTop3" layoutX="382.0" layoutY="10.0" mnemonicParsing="false" onAction="#showTop" prefHeight="50.0" prefWidth="100.0" text="Top 3" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,7 @@
+4|Project-Manager|fulltime
+1|CEO|fulltime
+6|Android Developer|parttime
+2|Scrum Master|fulltime
+3|Android Developer|fulltime
+7|Front end UI/UX|fulltime
+8|Back-end (PHP)|fulltime
