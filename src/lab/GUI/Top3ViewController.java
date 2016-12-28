@@ -40,6 +40,8 @@ public class Top3ViewController {
 
     }
 
+
+    //Handles the top button
     public void handleTopButton(){
         Map<Sarcina,Integer> sarciniNumber=new HashMap<Sarcina,Integer>();
         ArrayList<Sarcina> listaSarcini=new ArrayList<>();
